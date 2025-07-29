@@ -24,7 +24,7 @@ export const projects: Project[] = [
     description: 'Full-stack booking system with real-time lane reservations, conflict detection, and comprehensive admin dashboard.',
     longDescription: 'Developed a complete booking management system for The Bat Cage sports facility, featuring real-time lane availability, automated conflict detection, and a powerful admin dashboard. The system serves 500+ weekly users and has reduced failed bookings by 80%.',
     techStack: ['React', 'TypeScript', 'Node.js', 'AWS', 'GitHub Actions', 'CDKTF', 'DynamoDB', 'Lambda'],
-    liveUrl: 'https://thebatcage.com',
+    liveUrl: 'https://thebatcage.ca',
     githubUrl: 'https://github.com/Dharmil4602/the-bat-cage',
     image: theBatCage,
     featured: true,
