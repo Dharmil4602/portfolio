@@ -1,16 +1,20 @@
 import { Project, Experience, Education, SkillCategory } from '../types';
+import theBatCage from '../assets/batcage-portfolio.png'
+import jobly from '../assets/jobly.png'
+import carebridge from '../assets/carebridge.png'
+import resume from '../assets/Dharmil_Shah_Resume.pdf'
 
 export const personalInfo = {
   name: 'Dharmil Nareshkumar Shah',
   title: 'Full-Stack Developer',
   email: 'work.dharmil@gmail.com',
   phone: '+1 782-882-7014',
-  location: 'Halifax, NS, Canada',
+  location: 'Canada',
   linkedin: 'https://linkedin.com/in/dharmil4602',
   github: 'https://github.com/Dharmil4602',
   website: 'https://dharmilshah.dev',
-  bio: 'Passionate full-stack developer with expertise in modern web technologies and cloud architecture. Currently building innovative solutions at PRGC Group|Live, with a focus on scalable applications and exceptional user experiences.',
-  resumeUrl: '/resume-dharmil-shah.pdf'
+  bio: 'Passionate full-stack developer with expertise in modern web technologies and cloud architecture. Currently building innovative solutions at PRGC Group, with a focus on scalable applications and exceptional user experiences.',
+  resumeUrl: resume
 };
 
 export const projects: Project[] = [
@@ -22,7 +26,7 @@ export const projects: Project[] = [
     techStack: ['React', 'TypeScript', 'Node.js', 'AWS', 'GitHub Actions', 'CDKTF', 'DynamoDB', 'Lambda'],
     liveUrl: 'https://thebatcage.com',
     githubUrl: 'https://github.com/Dharmil4602/the-bat-cage',
-    image: 'https://images.pexels.com/photos/248547/pexels-photo-248547.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: theBatCage,
     featured: true,
     category: 'web',
     status: 'completed',
@@ -54,9 +58,9 @@ export const projects: Project[] = [
     description: 'Chrome Extension using TypeScript and Google Vertex AI to analyze resume-job description matches.',
     longDescription: 'Built an intelligent Chrome extension that leverages Google Vertex AI to analyze resume-job description compatibility. Features automated parsing, match scoring, and actionable recommendations for job seekers.',
     techStack: ['TypeScript', 'Google App Engine', 'Vertex AI', 'Chrome API', 'Webpack', 'NLP'],
-    liveUrl: 'https://chrome.google.com/webstore/detail/jobly',
-    githubUrl: 'https://github.com/Dharmil4602/jobly-extension',
-    image: 'https://images.pexels.com/photos/590041/pexels-photo-590041.jpg?auto=compress&cs=tinysrgb&w=1200',
+    liveUrl: 'https://chromewebstore.google.com/detail/jobly-your-resume-analyse/migmfpaepnjigcaceijlolhpkmjemknk',
+    githubUrl: 'https://github.com/Dharmil4602/jobly',
+    image: jobly,
     featured: true,
     category: 'ai',
     status: 'completed',
@@ -73,7 +77,7 @@ export const projects: Project[] = [
     longDescription: 'Led development of an innovative Android application designed to enhance safety and communication for senior citizens. Implemented advanced fall-detection using gyroscope and accelerometer sensors with real-time notifications.',
     techStack: ['Kotlin', 'Android', 'Firebase', 'FCM', 'Sensor APIs', 'Machine Learning'],
     githubUrl: 'https://github.com/Dharmil4602/carebridge',
-    image: 'https://images.pexels.com/photos/8001128/pexels-photo-8001128.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: carebridge,
     featured: false,
     category: 'mobile',
     status: 'completed',
@@ -103,7 +107,7 @@ export const projects: Project[] = [
 export const experiences: Experience[] = [
   {
     id: 'prgc-group',
-    company: 'PRGC Group|Live',
+    company: 'PRGC Group',
     position: 'Software Developer',
     duration: 'February 2025 – Present',
     location: 'Canada',

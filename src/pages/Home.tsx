@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Download, Github, Linkedin, Mail, MapPin, Calendar, Award } from 'lucide-react';
+import { ArrowRight, Github, Linkedin, Mail, MapPin, Calendar, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Button from '../components/UI/Button';
 import Card from '../components/UI/Card';
@@ -50,7 +50,7 @@ const Home: React.FC = () => {
 
   const stats = [
     { label: 'Projects Completed', value: '10+', icon: Award },
-    { label: 'Years Experience', value: '3+', icon: Calendar },
+    { label: 'Years Experience', value: '1.5+', icon: Calendar },
     { label: 'Technologies', value: '20+', icon: MapPin },
   ];
 
@@ -216,7 +216,7 @@ const Home: React.FC = () => {
             initial="hidden"
             animate="visible"
           >
-            {stats.map((stat, index) => (
+            {stats.map((stat) => (
               <motion.div key={stat.label} variants={itemVariants}>
                 <Card className="p-6 text-center hover:shadow-lg transition-all duration-300" hover>
                   <stat.icon className="h-8 w-8 text-blue-600 dark:text-blue-400 mx-auto mb-3" />

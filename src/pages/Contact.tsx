@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
-import { Mail, Phone, MapPin, Send, CheckCircle, Github, Linkedin, Calendar, Clock } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, CheckCircle, Github, Linkedin, Clock } from 'lucide-react';
 import emailjs from 'emailjs-com';
 import Button from '../components/UI/Button';
 import Card from '../components/UI/Card';
@@ -48,8 +48,8 @@ const Contact: React.FC = () => {
     try {
       // EmailJS configuration - Replace with your actual credentials
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        'service_rt8ypsd', // Replace with your EmailJS service ID
+        'template_bvo9bqu', // Replace with your EmailJS template ID
         {
           from_name: data.name,
           from_email: data.email,
@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
           message: data.message,
           to_name: 'Dharmil Shah',
         },
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+        'ZXM4KJ-7ppsD_bftc' // Replace with your EmailJS public key
       );
 
       setIsSubmitted(true);

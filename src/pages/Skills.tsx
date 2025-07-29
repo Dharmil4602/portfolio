@@ -102,7 +102,7 @@ const Skills: React.FC = () => {
                               key={skill.name}
                               name={skill.name}
                               level={skill.level}
-                              experience={skill.experience}
+                              // experience={skill.experience}
                               icon={skill.icon}
                               color={color}
                               delay={categoryIndex * 0.2 + index * 0.1}

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 interface SkillBarProps {
   name: string;
   level: number;
-  experience: string;
+  // experience: string;
   icon?: string;
   color?: string;
   delay?: number;
@@ -13,7 +13,7 @@ interface SkillBarProps {
 const SkillBar: React.FC<SkillBarProps> = ({
   name,
   level,
-  experience,
+  // experience,
   icon,
   color = 'blue',
   delay = 0
@@ -32,7 +32,7 @@ const SkillBar: React.FC<SkillBarProps> = ({
         </div>
         <div className="text-right">
           <span className="text-sm font-medium text-gray-600 dark:text-gray-400">{level}%</span>
-          <div className="text-xs text-gray-500 dark:text-gray-500">{experience}</div>
+          {/* <div className="text-xs text-gray-500 dark:text-gray-500">{experience}</div> */}
         </div>
       </div>
       <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">

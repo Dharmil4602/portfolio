@@ -116,7 +116,7 @@ const About: React.FC = () => {
                 Professional Experience
               </h2>
               <div className="space-y-6">
-                {experiences.map((exp, index) => (
+                {experiences.map((exp) => (
                   <motion.div
                     key={exp.id}
                     variants={itemVariants}
@@ -192,7 +192,7 @@ const About: React.FC = () => {
                 Education
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {education.map((edu, index) => (
+                {education.map((edu) => (
                   <motion.div
                     key={edu.id}
                     variants={itemVariants}
