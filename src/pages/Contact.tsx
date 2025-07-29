@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
     try {
       // EmailJS configuration - Replace with your actual credentials
       await emailjs.send(
-        'service_rt8ypsd', // Replace with your EmailJS service ID
+        'service_buifpp9', // Replace with your EmailJS service ID
         'template_bvo9bqu', // Replace with your EmailJS template ID
         {
           from_name: data.name,
